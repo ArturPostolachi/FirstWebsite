@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./fontawesome-free-5.8.2-web/css/all.css" />
+    <!-- My JQuery -->
+    <script src="./libs/jquery-3.4.1.js"></script>
+    <script src="./libs/jquery.csv.js"></script>
+    <script src="./libs/scripts.js"></script>
+    <!-- My StyleSheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Artists</title>
+  </head>
+
+  <body>
+    <!-- Scroll up Button -->
+    <a id="button">
+      <i class="fas fa-arrow-alt-circle-up"></i>
+    </a>
+    <header>
+      <a href="./index.html" class="header-brand">Art Gallery </a>
+
+      <!-- Navigation Arrow Up/Down -->
+      <span class="navbar-btn">
+        <i class="up-down fas fa-chevron-down"></i>
+        <i class="up-down fas fa-chevron-up"></i>
+      </span>
+
+      <!-- Navigation Content when arrow Down -->
+      <nav class="collapsable">
+        <ul class="content">
+          <li>
+            <a href="./artist.html" class="current-link"
+              ><i class="fas fa-paint-brush"></i>Artists</a
+            >
+          </li>
+          <li>
+            <a href="./map.html"><i class="far fa-newspaper"></i>Map</a>
+          </li>
+          <li>
+            <a href="./about.html"><i class="far fa-address-card"></i>About</a>
+          </li>
+          <li>
+            <a href="./account.html"
+              ><i class="far fa-user-circle"></i>Account</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- The wrapper is there to push the content from the sides of screen -->
+    <div class="wrapper">
+      <!-- Container in which i append pictures of artists with the help of SVG and AJAX -->
+      <main id="artist-main"></main>
+
+      <!-- Information conatined in the footer of the website -->
+      <footer>
+        <div class="footer-follow-us">
+          <h3>Follow Us</h3>
+          <span>
+            <a href="https://www.youtube.com/"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="https://www.facebook.com/"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://twitter.com/?lang=en"
+              ><i class="fab fa-twitter-square"></i
+            ></a>
+          </span>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact Info</h3>
+          <div>
+            <span class="footer-contact-title">Phone:</span>
+            <span>089 000 1111</span>
+          </div>
+          <div>
+            <span class="footer-contact-title">Email:</span>
+            <span>artur@yahoo.com</span>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./artist.html">Artists</a></li>
+            <li><a href="./map.html">Map</a></li>
+            <li><a href="./account.html">Account</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-picture"></div>
+        <div class="footer-copyright">
+          <p>Copyright &copy; 2019</p>
+          <p>Website Designed by Artur</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
